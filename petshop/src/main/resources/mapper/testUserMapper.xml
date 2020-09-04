@@ -8,6 +8,7 @@
     <!--</select>-->
 
     <select id="loadUser" resultType="testuser">
-        select * from usertable where UserId = 1;
+        select * from `test_user_table` where UserId = 1;
     </select>
+
 </mapper>

@@ -1,10 +1,13 @@
 package com.hello.petshop.controller;
 
+
 import com.hello.petshop.entity.TestUser;
 import com.hello.petshop.service.TestIUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 public class testUserController {
@@ -19,5 +22,7 @@ public class testUserController {
 //        return bool?"succeed":"index";
           boolean bool = testuserService.loadUser();
           return bool?"succeed":"index";
+
     }
+
 }
